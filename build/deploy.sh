@@ -1,0 +1,1 @@
+cp -R /home/adam/sites/faceblade/build/* /var/www/faceblade/

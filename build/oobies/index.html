@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Make your best Oobie</title> 
+    <script type="text/javascript" src="./methods.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>  
+  <body id="body">
+    <h1 class="page-title">Welcome To The Oobie Maker!</h1>
+    <div id="smiley" class="face">&nbsp;</div>      
+    <input type="color" id="faceColorPicker" onchange="setFaceColor(this.value);" value="#ffff00" class="color-picker">
+    <input type="color" id="backgroundColorPicker" onchange="setBackgroundColor(this.value);" value="#ffffff" class="color-picker">
+    <input type="range" min="50" max="1000" value="600" class="slider" id="myRange" onchange="setFaceSize(this.value);">
+</body>     
+ </html> 

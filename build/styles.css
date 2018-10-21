@@ -1,0 +1,25 @@
+.body {
+    min-height: 900px;
+    background-image: linear-gradient(white, blue);
+}
+
+.heading1 {
+    color: red, white;
+}
+
+
+.button {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.sun {
+    color: yellow;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    border-radius: 100px;
+}
