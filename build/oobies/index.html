@@ -7,9 +7,27 @@
   </head>  
   <body id="body">
     <h1 class="page-title">Welcome To The Oobie Maker!</h1>
-    <div id="smiley" class="face">&nbsp;</div>      
-    <input type="color" id="faceColorPicker" onchange="setFaceColor(this.value);" value="#ffff00" class="color-picker">
-    <input type="color" id="backgroundColorPicker" onchange="setBackgroundColor(this.value);" value="#ffffff" class="color-picker">
-    <input type="range" min="50" max="1000" value="600" class="slider" id="myRange" onchange="setFaceSize(this.value);">
+    
+    <ul class="cp-list"> 
+      <li>
+        <span class="item-label">Face Color Picker</span>
+        <input type="color" id="faceColorPicker" onchange="setFaceColor(this.value);" value="#ffff00" class="color-picker">
+      </li>
+      <li>
+        <span class="item-label">Background Color Picker</span>
+        <input type="color" id="backgroundColorPicker" onchange="setBackgroundColor(this.value);" value="#ffffff" class="color-picker">
+      </li>
+      <li>
+        <span class="item-label">Face Size </span>
+        <input type="range" min="50" max="1000" value="600" class="slider" id="myRange" onchange="setFaceSize(this.value);">
+      </li>
+    </ul>
+  
+    <div id="smiley" class="face">
+      <div id="leftEye" class="left-eye eye">&nbsp;</div> 
+      <div id="rightEye" class="right-eye eye">&nbsp;</div>
+    </div>      
+
+    
 </body>     
  </html> 

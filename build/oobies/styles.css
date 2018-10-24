@@ -16,3 +16,20 @@
 .color-picker {
     width: 50px; 
 }
+
+.cp-list {
+    border: solid 1px #cccccc;
+    width: 300px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    background-color: grey;   
+}
+
+.eye {
+    background-color: black;
+    width: 76px;
+    display: inline-block;
+    position: relative;
+    top: 120px;
+}
