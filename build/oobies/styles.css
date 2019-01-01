@@ -5,10 +5,7 @@
 }
 
 .face {
-    background-color: yellow;
-    width: 600px;
-    height: 600px;
-    border-radius: 300px;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
 }
@@ -28,8 +25,6 @@
 
 .eye {
     background-color: black;
-    width: 76px;
     display: inline-block;
-    position: relative;
-    top: 120px;
+    position: absolute;
 }
