@@ -38,14 +38,13 @@ function render() {
     // eyes common
     var eyeWidth = faceState.faceWidth/10;
     var eyeHeight = faceState.faceHeight/5;
-    var eyeBorder = faceState.faceWidth/20;
     var eyePositionTop = faceState.faceHeight/5 + 'px';
 
     // update left eye
     var $leftEye = document.getElementById('leftEye');
     $leftEye.style.width = eyeWidth + 'px';
     $leftEye.style.height = eyeHeight + 'px';
-    $leftEye.style.borderRadius = eyeBorder + 'px';
+    $leftEye.style.borderRadius = '50%';
     $leftEye.style.top = eyePositionTop;
     $leftEye.style.left = (faceState.faceWidth/3 - eyeWidth/2) + 'px';
 
@@ -54,9 +53,25 @@ function render() {
     var $rightEye = document.getElementById('rightEye');
     $rightEye.style.width = eyeWidth + 'px';
     $rightEye.style.height = eyeHeight + 'px';
-    $rightEye.style.borderRadius = eyeBorder + 'px';
+    $rightEye.style.borderRadius = '50%';
     $rightEye.style.top = eyePositionTop;
     $rightEye.style.left = (2*faceState.faceWidth/3 - eyeWidth/2) + 'px';
+
+    // update smile
+    var $topLip = document.getElementById('topLip');
+    $topLip.style.top = faceState.faceHeight/3 + 'px';
+    $topLip.style.width = faceState.faceWidth-(0.2*faceState.faceWidth) + 'px';
+    $topLip.style.height = faceState.faceHeight/2 + 'px';
+    $topLip.style.left = (0.1*faceState.faceWidth) + 'px';
+    $topLip.style.borderRadius = '50%';
+    $topLip.style.backgroundColor = faceState.faceColor; 
+
+    var $bottomLip = document.getElementById('bottomLip');
+    $bottomLip.style.top = faceState.faceHeight/3+(0.05*faceState.faceHeight) + 'px';
+    $bottomLip.style.width = faceState.faceWidth-(0.2*faceState.faceWidth) + 'px';
+    $bottomLip.style.height = faceState.faceHeight/2 + 'px';
+    $bottomLip.style.borderRadius = '50%';
+    $bottomLip.style.left = (0.1*faceState.faceWidth) + 'px';
 
 }
 

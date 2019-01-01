@@ -28,3 +28,13 @@
     display: inline-block;
     position: absolute;
 }
+
+.lip {
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+}
+
+.top-lip {
+    z-index: 100;
+}
