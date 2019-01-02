@@ -2,7 +2,8 @@ var faceState = {
     faceColor: '#ffff00',
     bgColor: '#ffffff',
     faceWidth: 600,
-    faceHeight: 600
+    faceHeight: 600,
+    eyeMouthColor: '#000000'
 };
 
 function setFaceColor(color) {
@@ -20,6 +21,12 @@ function setFaceSize(size) {
     faceState.faceHeight = size;
     render();
 }
+
+function setEyeMouthColor(color) {
+    faceState.eyeMouthColor = color;
+    render();
+}
+
 
 function render() {
     // update face color
@@ -47,7 +54,7 @@ function render() {
     $leftEye.style.borderRadius = '50%';
     $leftEye.style.top = eyePositionTop;
     $leftEye.style.left = (faceState.faceWidth/3 - eyeWidth/2) + 'px';
-
+    $leftEye.style.backgroundColor = faceState.eyeMouthColor;
 
     // update right eye
     var $rightEye = document.getElementById('rightEye');
@@ -56,6 +63,7 @@ function render() {
     $rightEye.style.borderRadius = '50%';
     $rightEye.style.top = eyePositionTop;
     $rightEye.style.left = (2*faceState.faceWidth/3 - eyeWidth/2) + 'px';
+    $rightEye.style.backgroundColor = faceState.eyeMouthColor;
 
     // update smile
     var $topLip = document.getElementById('topLip');
@@ -72,6 +80,7 @@ function render() {
     $bottomLip.style.height = faceState.faceHeight/2 + 'px';
     $bottomLip.style.borderRadius = '50%';
     $bottomLip.style.left = (0.1*faceState.faceWidth) + 'px';
+    $bottomLip.style.backgroundColor = faceState.eyeMouthColor;
 
 }
 
